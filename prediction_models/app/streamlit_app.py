@@ -79,7 +79,7 @@ def main():
                 model=joblib.load(model_path)
 
             scaler=MinMaxScaler(feature_range=(0,1))
-            scaled_data=scaler.fit_transform(stock_data['Close'].values.reshape(-1, 1))
+            scaled_data = scaler.fit_transform(stock_data['Close'].values.reshape(-1, 1))
             x_pred, y_true=create_dataset(scaled_data)
             st.write(f" x_pred shapre before reshape: {x_pred.shape}")
 
