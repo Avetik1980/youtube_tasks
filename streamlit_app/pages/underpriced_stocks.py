@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 
 BASE_URL = "https://financialmodelingprep.com/api/v3"
-API_KEY = "8685dd75580791a73a4f689e161c183b"
+API_KEY = ""
 
 @st.cache_resource
 def fetch_sp500_tickers():
